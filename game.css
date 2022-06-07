@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+body{
+    font-family:A rial, Helvetica, sans-serif;
+    margin:0;
+    background-color: beige;
+}
+
+p {
+    background-color: beige;
+    border-radius: 5%;
+    display: inline-flex;
+    position:fixed;
+    font-size: 500%;
+    z-index: -1;
+    top:20%;
+    left:5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card.multiRoundcards1{
+    background-color: blue;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    min-width: 80vh;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+}
+
+
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+.card{
+    height: 90px;
+    width: 90px;
+    background-color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s all ease;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.roundCards
+{   
+    animation: blinker 0.5s linear;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+
+.card.clicked{
+    background-color: blue;
+}
+
+.smiley{
+    background-color: yellow;
+}
+.smiley:hover{
+    transform: scale(1.5);
+    transition: 0.3s all ease
+}
+
+.hidden{
+    background-color: white;
+    
+}
+
+.high{
+    top:80px;
+    left:80%;
+    height:100px;
+    width:70x;
+    position:fixed;
+    border-color: #000000;
+    border-radius: 5px;
+    place-items:center;
+    z-index: 1;  
+    background-color: beige;
+    display: inline-flex;
+}
+
+.center{
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+.timerHide{
+    display:none;
+}
+
+.card.multiRoundcards2
+{
+    background-color: red;
+}
+
+@media all and (max-width: 1200px)
+{
+    p{
+        left:35%;
+        top:80%;
+    }
+
+    .card{
+        height: 70px;
+        width: 70px;
+        background-color: #000000;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+  
+}
+
+@media all and (max-width: 802px){
+
+    .high{
+        top:80%;
+    }
+
+}
+
+@media all and (max-width: 370px){
+    .high{
+        left:40%;
+    }
+    .high{
+        top:60%;
+    }
+}
+
+
